@@ -17,4 +17,10 @@ def move(board, user, character= "X")
 
 end
 
+def valid_move?(board, index)
+  if position_taken?(board, index)  == false && index.between?(0, 8) == true
+    return true
+  end
+end
+
 # code your input_to_index and move method here!
